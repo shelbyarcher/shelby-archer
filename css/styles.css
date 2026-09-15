@@ -184,22 +184,20 @@ a:hover { text-decoration: underline; }
   grid-template-columns: repeat(4, 1fr);
   gap: 0.55rem;
   margin: 1rem 0 0.5rem;
-  align-items: start;
+  align-items: stretch;
 }
 .plaque-grid img {
   width: 100%;
-  max-height: 160px;
-  object-fit: cover;
-  object-position: center top;
+  height: auto;
+  object-fit: contain;
   border-radius: 0.65rem;
   border: 1px solid var(--line);
-  background: #000;
+  background: #0a0a0a;
+  display: block;
 }
 @media (max-width: 860px) {
   .plaque-grid { grid-template-columns: repeat(2, 1fr); }
-  .plaque-grid img { max-height: 140px; }
 }
 @media (max-width: 520px) {
   .plaque-grid { grid-template-columns: repeat(2, 1fr); gap: 0.4rem; }
-  .plaque-grid img { max-height: 120px; }
 }
