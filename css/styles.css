@@ -181,10 +181,11 @@ a:hover { text-decoration: underline; }
 
 .plaque-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.55rem;
+  grid-template-columns: repeat(2, minmax(0, 320px));
+  gap: 0.75rem;
   margin: 1rem 0 0.5rem;
   align-items: stretch;
+  justify-content: start;
 }
 .plaque-grid img {
   width: 100%;
